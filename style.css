@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.grid-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template:
+    "header header header header header header"
+    "menu main main main main main"
+    "menu main main main main main"
+    "menu main main main main main"
+    "menu footer footer footer footer footer";
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  background-color: #474448;
+  min-height: 50px;
+}
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  align-self: flex-start;
+}
+
+.searchdiv {
+  align-self: center;
+}
+
+.searchbar {
+  background-color: #2d232e;
+  border: none;
+  cursor: ;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: rgb(133, 89, 89);
+}
+
+.main {
+  grid-area: main;
+  background-color: blue;
+  min-height: 500px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: aquamarine;
+  min-height: 30px;
+}
