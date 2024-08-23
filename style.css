@@ -68,7 +68,19 @@ span {
 
 .menu {
   grid-area: menu;
-  background-color: rgb(133, 89, 89);
+  background-color: #2d232e;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu h2 {
+  margin: 10px 0px 5px 0px;
+  color: #e0ddcf;
+}
+
+ol li {
+  color: #e0ddcf;
 }
 
 /* ------------MAIN-------------*/
