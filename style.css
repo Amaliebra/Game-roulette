@@ -17,17 +17,34 @@
     "menu footer footer footer footer footer";
 }
 
+/*---------------HEADER------------------------*/
+
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   grid-area: header;
   background-color: #474448;
   min-height: 50px;
 }
 
+span {
+  background: #54cf2e;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #54cf2e 0%,
+    #8acf79 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .logo {
   font-family: "Roboto", sans-serif;
-  align-self: flex-start;
+  align-self: center;
+  justify-items: flex-start;
+  font-weight: 900;
+  color: #e0ddcf;
 }
 
 .searchdiv {
@@ -38,18 +55,31 @@
   background-color: #2d232e;
   border: none;
   cursor: text;
+  min-width: 400px;
+  min-height: 35px;
+  font-family: "Roboto", sans-serif;
 }
+
+.searchbar:focus {
+  outline: #534b52 solid;
+}
+
+/* ---------------MENU--------------*/
 
 .menu {
   grid-area: menu;
   background-color: rgb(133, 89, 89);
 }
 
+/* ------------MAIN-------------*/
+
 .main {
   grid-area: main;
   background-color: blue;
   min-height: 500px;
 }
+
+/*------------FOOTER-------------------*/
 
 .footer {
   grid-area: footer;
